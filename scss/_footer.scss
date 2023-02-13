@@ -1,0 +1,83 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+
+    @media (max-width:768px) {
+        line-height: 24px;
+        padding-top: 33px;
+    }
+
+    @media (max-width:695px) {
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 22px;
+        padding-bottom: 7px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+        }
+
+        @media (max-width:695px) {
+            width: 69%;
+        }
+    }
+
+    &__data {
+        line-height: 24px;
+    }
+
+    &__year {
+        margin-left: 14px;
+        margin-right: 20px;
+        color: #000;
+    }
+
+    &__school {
+        @media (max-width:768px) {
+            margin-top: 16px;
+            margin-bottom: 24px;
+
+        }
+    }
+
+
+    &__socials {
+
+        @media (max-width:768px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media (max-width:695px) {
+            width: 188px;
+        }
+
+        & a {
+            margin-left: 20px;
+
+            @media (max-width:768px) {
+                margin-left: 0;
+            }
+        }
+
+        &__item {
+            width: 32px;
+            height: 32px;
+        }
+
+    }
+
+
+}
+

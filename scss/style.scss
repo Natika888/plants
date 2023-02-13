@@ -1,0 +1,68 @@
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: 'Inter', sans-serif;
+$fontSize: 20px;
+//</Шрифт по умолчанию>==========================================================================================
+
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // flex: 1 1 auto;
+    font-family: $fontFamily;
+    font-style: normal;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+[class*="__container"] {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width:768px) {        
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    @media (max-width:690px) {
+        width: 100%;               
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    
+}
+
+
+
+
+@import "variables";
+@import "reset";
+@import "header";
+@import "welcome";
+@import "about";
+@import "service";
+@import "prices";
+@import "footer";
+@import "contacts";
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
